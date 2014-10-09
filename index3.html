@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>HW2</title>
+	<link rel="stylesheet" href="./css/index3css.css" type="text/css">
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div id="header_left"><h2>2014년도 2학기</h2></div>	
+			<div id="header_center"><h1>HTML/CSS 자기소개 페이지 만들기</h1></div> 
+			<div id="navbar">
+				<ul>
+					<li><a href="./index.html" >초기화면</a>	</li>
+					<li><a href="./index2.html">자기소개</a></li>
+					<li><a href="./index3.html" class="selected">설문조사</a></li>
+					<li><a href="./movie.html">영화추천</a>	</li>
+				</ul>				
+			</div>
+		</div>
+		<div id="content">
+			<h1>설문조사</h1>
+			<form action="request.jsp" method ="post">
+				<table>
+					<tr>
+						<th>번호</th>
+						<th>질문</th>
+						<th>그렇다</th>
+						<th>보통이다</th>
+						<th>아니다</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>하동욱을 안다</td>
+						<td><input type="radio" name="answer1" value="yes"/></td>
+						<td><input type="radio" name="answer1" value="soso"/></td>
+						<td><input type="radio" name="answer1" value="no"/></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>하동욱과 친해지고 싶다</td>
+						<td><input type="radio" name="answer2" value="yes"/></td>
+						<td><input type="radio" name="answer2" value="soso"/></td>
+						<td><input type="radio" name="answer2" value="no"/></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>과제를 잘했다</td>
+						<td><input type="radio" name="answer3" value="yes"/></td>
+						<td><input type="radio" name="answer3" value="soso"/></td>
+						<td><input type="radio" name="answer3" value="no"/></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>전하고 싶은말</td>
+						<td colspan="3"><textarea name="mail" id="mail" cols="30" rows="1"></textarea>						
+						</td>
+					</tr>
+				</table>
+				<div id="button"><input type="submit" value="제출하기"></div>
+			</form>				
+		</div>
+	</div>	
+</body>
+</html>
